@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server'
 import { getServerSession } from 'next-auth/next'
-import { authOptions } from '../../api/auth/[...nextauth]/route'
+import { authOptions } from '../[...nextauth]/route'
 
 //protecting our API endpoint:
 //This function below opens the server to an API endpoint (for the sake of testing)

@@ -10,7 +10,7 @@ generator client {
   provider = "prisma-client-js"
 }
 
-model Post {
+model Review {
   id        String  @id @default(cuid())
   title     String
   content   String?
@@ -59,7 +59,7 @@ model User {
   image         String?
   createdAt     DateTime  @default(now()) @map(name: "created_at")
   updatedAt     DateTime  @updatedAt @map(name: "updated_at")
-  posts         Post[]
+  reviews         Review[]
   accounts      Account[]
   sessions      Session[]
 

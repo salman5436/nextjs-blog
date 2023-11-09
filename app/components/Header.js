@@ -15,6 +15,9 @@ const Header = () => {
           <li className='text-sm'>
             <Link href='/protected/client'>Protected (client)</Link>
           </li>
+          <li className='text-sm'>
+            <Link href='/reviewsfeed/client'>Feed</Link>
+          </li>
           <li>
             <SignInButton />
           </li>
